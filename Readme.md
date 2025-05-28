@@ -55,12 +55,12 @@ created_at: 2025-05-28T10:22:49.890+00:00
 
   _id: ObjectId('6836e3f9c7996ce8cc6c4bd6')  
   description: "Clean the room"  
-  status: "pending" 
+  status: "pending"  
   created_at: 2025-05-28T10:22:49.890+00:00  
 
   _id: ObjectId('6836e3f9c7996ce8cc6c4bd7')  
   description: "Water the plants"  
-  status: "pending" 
+  status: "pending"  
   created_at: 2025-05-28T10:22:49.890+00:00  
 
   _id: ObjectId('6836e3f9c7996ce8cc6c4bd8')  
