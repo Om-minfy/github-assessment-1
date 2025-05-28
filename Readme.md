@@ -225,3 +225,11 @@ created_at: 2025-05-28T10:22:49.890+00:00
   status: false  
   created_at: 2025-05-28T10:22:49.890+00:00  
   updated_at: 2025-05-28T10:41:39.890+00:00
+
+### Step 11: Count All Tasks:
+- db.tasks.countDocuments()
+
+### Step 12: Count Only Completed Tasks (status: true):
+- db.tasks.countDocuments({ status: true })
+
+### END
