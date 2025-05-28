@@ -12,3 +12,16 @@
   description : "Buy Shoes"  
   status : "pending"  
   created_at : 2025-05-28T10:17:19.273+00:00
+
+### Step 3: Code to write 10 todo list:
+- db.tasks.insertMany(  
+  { description: "complete homework", status: "pending", created_at: new Date() },  
+  { description: "Call mom", status: "pending", created_at: new Date() },  
+  { description: "Finish reading book", status: "pending", created_at: new Date() },  
+  { description: "Reply to emails", status: "pending", created_at: new Date() },  
+  { description: "Clean the room", status: "pending", created_at: new Date() },  
+  { description: "Water the plants", status: "pending", created_at: new Date() },  
+  { description: "Exercise for 30 minutes", status: "pending", created_at: new Date() },  
+  { description: "Plan the weekend trip", status: "pending", created_at: new Date() },  
+  { description: "Review project notes", status: "pending", created_at: new Date() }  
+)
