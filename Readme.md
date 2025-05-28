@@ -142,10 +142,10 @@ created_at: 2025-05-28T10:22:49.890+00:00
   created_at: 2025-05-28T10:22:49.890+00:00
 
 ### Step 7: Status should be false by default:
-- db.tasks.insert_one({  
-    "description": "New task from user",  
-    "status": False,  
-    "created_at": datetime.datetime.utcnow()  
+- db.tasks.insertOne({  
+    description: "New task from user",  
+    status: false,  
+    created_at: new Date()  
 })
 
 ### Step 8: Update the status field from false to true for a specific task:
