@@ -140,3 +140,70 @@ created_at: 2025-05-28T10:22:49.890+00:00
   description: "Review project notes"  
   status: false  
   created_at: 2025-05-28T10:22:49.890+00:00
+
+### Step 7: Status should be false by default:
+- db.tasks.insert_one({  
+    "description": "New task from user",  
+    "status": False,  
+    "created_at": datetime.datetime.utcnow()  
+})
+
+### Step 8: Update the status field from false to true for a specific task:
+- db.tasks.updateOne(  
+  { _id: ObjectId('6836e3f9c7996ce8cc6c4bd2') },  
+  { $set: { status: true } }  
+)
+- _id: ObjectId('6836e2afc7996ce8cc6c4bd0')  
+  description : "Buy Shoes"  
+  status : false  
+  created_at : 2025-05-28T10:17:19.273+00:00
+
+  _id: ObjectId('6836e3f9c7996ce8cc6c4bd1')  
+  description: "Buy groceries"  
+  status: false  
+  created_at: 2025-05-28T10:22:49.890+00:00  
+
+  _id: ObjectId('6836e3f9c7996ce8cc6c4bd2')  
+  description: "Complete homework"  
+  status: true  
+  created_at: 2025-05-28T10:22:49.890+00:00  
+
+  _id: ObjectId('6836e3f9c7996ce8cc6c4bd3')  
+  description: "Call mom"  
+  status: false  
+  created_at: 2025-05-28T10:22:49.890+00:00  
+
+  _id: ObjectId('6836e3f9c7996ce8cc6c4bd4')  
+  description: "Finish reading book"  
+  status: false  
+  created_at: 2025-05-28T10:22:49.890+00:00  
+
+  _id: ObjectId('6836e3f9c7996ce8cc6c4bd5')  
+  description: "Reply to emails"  
+  status: false  
+  created_at: 2025-05-28T10:22:49.890+00:00  
+
+  _id: ObjectId('6836e3f9c7996ce8cc6c4bd6')  
+  description: "Clean the room"  
+  status: false  
+  created_at: 2025-05-28T10:22:49.890+00:00  
+
+  _id: ObjectId('6836e3f9c7996ce8cc6c4bd7')  
+  description: "Water the plants"  
+  status: false  
+  created_at: 2025-05-28T10:22:49.890+00:00  
+
+  _id: ObjectId('6836e3f9c7996ce8cc6c4bd8')  
+  description: "Exercise for 30 minutes"  
+  status: false  
+  created_at: 2025-05-28T10:22:49.890+00:00  
+
+  _id: ObjectId('6836e3f9c7996ce8cc6c4bd9')  
+  description: "Plan the weekend trip"  
+  status: false  
+  created_at: 2025-05-28T10:22:49.890+00:00  
+
+  _id: ObjectId('6836e3f9c7996ce8cc6c4bda')  
+  description: "Review project notes"  
+  status: false  
+  created_at: 2025-05-28T10:22:49.890+00:00
