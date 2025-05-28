@@ -77,3 +77,8 @@ created_at: 2025-05-28T10:22:49.890+00:00
   description: "Review project notes"  
   status: "pending"  
   created_at: 2025-05-28T10:22:49.890+00:00
+
+### Step 5: View all tasks:
+- db.tasks.find()
+
+### Step 6: View all tasks:
