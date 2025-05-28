@@ -207,3 +207,21 @@ created_at: 2025-05-28T10:22:49.890+00:00
   description: "Review project notes"  
   status: false  
   created_at: 2025-05-28T10:22:49.890+00:00
+
+### Step 9: Verify the update:
+- db.tasks.find({ _id: ObjectId('6836e3f9c7996ce8cc6c4bd2') })
+
+### Step 10: Update any task in MongoDB and automatically set an updated_at timestamp:
+- db.tasks.updateOne(  
+  { _id: ObjectId('6836e3f9c7996ce8cc6c4bd3') },  
+  { $set: {  
+      description: "Buy groceries and fruits",  
+      status: false,  
+      updated_at: new Date()  
+    } }  
+)
+- _id: ObjectId('6836e3f9c7996ce8cc6c4bd3')  
+  description: "Buy groceries and fruits"  
+  status: false  
+  created_at: 2025-05-28T10:22:49.890+00:00  
+  updated_at: 2025-05-28T10:41:39.890+00:00
