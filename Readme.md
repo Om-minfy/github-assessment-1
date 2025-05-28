@@ -7,7 +7,9 @@
 - use todo_db
 
 ### Step 3: Code to write 1 todo list:
-- db.tasks.insertOne({description: "Buy Shoes", status: "pending", created_at: new Date()})
+- db.tasks.insertOne(  
+  { description: "Buy Shoes", status: "pending", created_at: new Date()}  
+)
 - _id: ObjectId('6836e2afc7996ce8cc6c4bd0')  
   description : "Buy Shoes"  
   status : "pending"  
